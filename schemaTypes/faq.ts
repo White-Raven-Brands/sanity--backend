@@ -11,6 +11,11 @@ export const faqs= defineType({
       type: 'string',
     }),
     defineField({
+      name: 'faq_image',
+      title: 'Image',
+      type: 'image',
+    }),
+    defineField({
       name: 'questions',
       title: 'FAQ Items',
       type: 'array',

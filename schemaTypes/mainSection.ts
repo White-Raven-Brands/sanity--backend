@@ -6,10 +6,26 @@ export const mainSection = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'content',
+      name: 'main_image',
+      title: 'MainSectionImage',
+      type: 'image',
+    }),
+    defineField({
+      name: 'beforeColored',
       type: 'string',
       validation:(rule)=>rule.max(200)
     }),
+    defineField({
+      name: 'Colored_content',
+      type: 'string',
+      validation:(rule)=>rule.max(200)
+    }),
+    defineField({
+      name: 'afterColored',
+      type: 'string',
+      validation:(rule)=>rule.max(200)
+    }),
+
     
   ],
 })

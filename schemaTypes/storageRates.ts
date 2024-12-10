@@ -11,16 +11,21 @@ export const storageRates= defineType({
       type: 'string',
     }),
     defineField({
+      name: 'our_rates_image',
+      title: 'Image',
+      type: 'image',
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'array',
       of: [{ type: 'block' }],
     }),
-    defineField({
-      name: 'noHandlingFees',
-      title: 'No Handling Fees',
-      type: 'boolean',
-    }),
+    // defineField({
+    //   name: 'noHandlingFees',
+    //   title: 'No Handling Fees',
+    //   type: 'boolean',
+    // }),
     defineField({
       name: 'rateOptions',
       title: 'Rate Options',
